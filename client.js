@@ -26,14 +26,14 @@ const connect = function () {
   
 
   conn.on('data', (data) => {
-    console.log("you ded cuz you idled", data)
+    console.log('Data:', data)
   })
 
   conn.on('connect', () => {
     console.log("You are connected");
   })
   conn.setEncoding("utf8");
-  
+
   return conn;
 };
 
